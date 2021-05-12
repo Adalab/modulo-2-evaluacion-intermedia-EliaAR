@@ -18,10 +18,10 @@ function inputChange(event) {
   let value = parseInt(int.value);
   if (value > max) {
     pUno.innerText = "Demasiado alto";
-    pDos.innerText = `Número de intentos: ${number++}`;
+    pDos.innerText = `Número de intentos: ${++number}`;
   } else if (value < max) {
     pUno.innerText = "Demasiado bajo";
-    pDos.innerText = `Número de intentos: ${number++}`;
+    pDos.innerText = `Número de intentos: ${++number}`;
   } else if (value === max) {
     pUno.innerText = "¡¡¡Has ganado campeona!!!";
     //} else if (/^[1-9][0-9]?$|^100$)/ !== max) {
