@@ -14,18 +14,18 @@ let pDos = document.querySelector(".paragraph2");
 let number = 0;
 function inputChange(event) {
   event.preventDefault();
-  let valid = int.value.match(/^[1-9][0-9]?$|^100$)/);
+  //let valid = int.value.match(/^[1-9][0-9]?$|^100$)/);
   let value = parseInt(int.value);
   if (value > max) {
-    texti.innerText = "Demasiado alto";
+    pUno.innerText = "Demasiado alto";
     pDos.innerText = `Número de intentos: ${number++}`;
   } else if (value < max) {
-    texti.innerText = "Demasiado bajo";
+    pUno.innerText = "Demasiado bajo";
     pDos.innerText = `Número de intentos: ${number++}`;
   } else if (value === max) {
-    texti.innerText = "¡¡¡Has ganado campeona!!!";
-  } else if (/^[1-9][0-9]?$|^100$)/ !== max) {
-    texti.innerText = "El número debe estar entre 1 y 100.";
+    pUno.innerText = "¡¡¡Has ganado campeona!!!";
+    //} else if (/^[1-9][0-9]?$|^100$)/ !== max) {
+    //texti.innerText = "El número debe estar entre 1 y 100.";
   }
 }
 buttonRamnom.addEventListener("click", inputChange);
