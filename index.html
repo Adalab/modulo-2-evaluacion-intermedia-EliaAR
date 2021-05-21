@@ -4,23 +4,37 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css" />
+    <title>Mid-term evaluation JS</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./CSS/style.css" />
   </head>
   <body>
-    <h1>Adivina el número</h1>
-    <form action="">
-      <label for="">Introduce aquí tu número:</label>
-      <input type="text" name="inputText" class="inputText" />
-      <button type="submit" class="button js-button">Prueba</button>
+    <h1 class="title">Adivina el número</h1>
+    <form>
+      <label for="number" class="labelInputText"
+        >Introduce aquí tu número:</label
+      >
+      <div class="inputsAll">
+        <input
+          type="text"
+          id="number"
+          name="inputText"
+          class="inputText"
+          placeholder=" Ej: 30"
+        />
+        <button type="submit" class="button js-button">Prueba</button>
+      </div>
     </form>
     <section>
       <p class="paragraph js-paragraph">
-        Pista:Escribe un número y dale a Prueba.
+        Pista: Escribe un número y dale a Prueba
       </p>
-      <p class="paragraph2 js-paragraph2">Número de intentos: 0</p>
+      <p class="paragraph js-paragraph2">Número de intentos: 0</p>
     </section>
 
-    <script src="./mains.js"></script>
+    <script src="./JS/main.js"></script>
   </body>
 </html>
